@@ -1,9 +1,9 @@
 import betija
 import Nohemi   
-import Nohemi  
 import vanessas_file
 import anan
 import Kiavash
+import andre
 
 def team_intro():
     print("This is Team PowerRangers. We are:")
@@ -12,6 +12,7 @@ def team_intro():
     print(vanessas_file.get_name())
     print(anan.get_name())
     print(Kiavash.get_name())
+    print(andre.get_name())
 
 if __name__ == "__main__":
     team_intro()
