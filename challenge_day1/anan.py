@@ -1,3 +1,3 @@
-def anan.get_name():
+def get_name():
     return"Anna"
 
