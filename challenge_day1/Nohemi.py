@@ -1,1 +1,2 @@
-print("Nohemi")
+def nohemi_name():
+    return "Nohemi"
