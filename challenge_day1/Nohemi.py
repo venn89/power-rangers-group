@@ -1,2 +1,2 @@
-def nohemi_name():
+def get_name():
     return "Nohemi"
