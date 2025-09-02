@@ -25,4 +25,6 @@ def solution_station_5(name):
 
     for team_number, members in learning_teams.items():
         if name in members:
-            return team_number
+            return team_number  
+
+    return 0  
