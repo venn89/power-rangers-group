@@ -20,7 +20,7 @@ def solution_station_5(name):
             "Ivan", "Juriaan", "Kiavash"],
 
         6: ["Keitaro", "Nohemi", "Norina", "Yifan", "Yinan", "Luo", "Nikola", 
-            "Olesya", "Sophie", "Tom"]
+            "Olesya", "Sophie M", "Tom"]
     }
 
     for team_number, members in learning_teams.items():
