@@ -12,4 +12,3 @@ def solution_station_1(n):
 
 
 
-print(solution_station_1(88))
