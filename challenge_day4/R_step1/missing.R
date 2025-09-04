@@ -1,4 +1,4 @@
-# Check if jsonlite is installed; if not, install it
+
 if (!requireNamespace("jsonlite", quietly = TRUE)) {
   install.packages("jsonlite", repos = "http://cran.rstudio.com/")
 }
@@ -7,7 +7,9 @@ if (!requireNamespace("jsonlite", quietly = TRUE)) {
 library(jsonlite)
 
 # Read the JSON file into a data frame
+#getwd()
 json_data <- fromJSON("data1.json")
+#json_data<-fromJSON(readLines("data1.json"), warn=F)
 
 # Convert the 'people' list to a data frame
 people_df <- as.data.frame(json_data$people)
@@ -24,10 +26,11 @@ for(col_name in names(people_df)) {
 }
 
 # Replace the 'people' list in the original data with the modified data frame
-json_data$people <- person_df
+json_data$people <- people_df
 
 # Convert the updated data back to JSON format
 json_text <- toJSON(json_data, pretty = TRUE)
 
+print(json_text)
 # Overwrite the original JSON file
 write(json_text, "data2.json")
