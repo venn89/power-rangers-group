@@ -14,7 +14,7 @@ fn main() -> io::Result<()> {
         .create(true)
         .open("data6.txt")?;
     
-    for (indexing, line) in reader.lines().enumerate() {
+    for (index, line) in reader.lines().enumerate() {
         let line = line?;
         
         if index == 0 {
@@ -56,12 +56,14 @@ fn main() -> io::Result<()> {
         let evaluation = if num_skills > 0 {
             (total_score as f32) / (num_skills as f32)
         } else {
-            0.0 // or whatever you want to set it to if no skills are evaluated
+            0.0
         };
         
-        writeln!(output, "{},{},{}", line, parts[6], evaluation)?;
+        // Write the original line + evaluation
+        writeln!(output, "{},{}", line, evaluation)?;
     }
     
     Ok(())
 }
+
 
