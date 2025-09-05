@@ -4,7 +4,8 @@ def get_name():
 
 def story_para6():
     print("Paragraph 6 (Andre's file)")
-    print("Andre described dreams of the six—Anna, Beti, Nohemi, Kiavash, and Vanessa—standing at a shining doorway. His visions made the device glow brighter in Anna’s hands.")   return 
+    print("Andre described dreams of the six—Anna, Beti, Nohemi, Kiavash, and Vanessa—standing at a shining doorway. His visions made the device glow brighter in Anna’s hands.")   
+    return 
 
 def story_para12():
     print("Paragraph 12 (Andre's file)")
