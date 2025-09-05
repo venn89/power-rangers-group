@@ -38,6 +38,6 @@ def story():
     for p in all_paragraphs:
         print(p)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     team_intro()
     story()
