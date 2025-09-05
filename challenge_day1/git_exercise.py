@@ -15,10 +15,30 @@ def team_intro():
     print(andre.get_name())
 
 def story():
-    # Only Anna's paragraphs
-    for p in anan.paragraphs:
+    all_paragraphs = [
+        anan.paragraphs[0],
+        betija.paragraphs[0],
+        Nohemi.paragraphs[0],
+        Kiavash.paragraphs[0],
+        Vanessa.paragraphs[0],
+        andre.paragraphs[0],
+        anan.paragraphs[1],
+        betija.paragraphs[1],
+        Nohemi.paragraphs[1],
+        Kiavash.paragraphs[1],
+        Vanessa.paragraphs[1],
+        andre.paragraphs[1],
+        anan.paragraphs[2],
+        betija.paragraphs[2],
+        Nohemi.paragraphs[2],
+        Kiavash.paragraphs[2],
+        Vanessa.paragraphs[2],
+        andre.paragraphs[2]
+    ]
+    for p in all_paragraphs:
         print(p)
 
 if __name__ == "__main__":
     team_intro()
     story()
+    
